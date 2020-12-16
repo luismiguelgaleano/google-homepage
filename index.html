@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>Tributo a Mati Ati</title>
-    <style>
-        body {
-            background-color: rgb(84, 84, 84);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-family: Arial;
-            height: 100vh;
-        }
-        h1 {
-            animation-duration: 3s;
-            animation-name: rainbow;
-            animation-iteration-count: infinite;
-        }
-        @keyframes rainbow {
-            0% {
-                color: red;
-            }
-            14% {
-                color: orange;
-            }
-            28% {
-                color: yellow;
-            }
-            42% {
-                color: green;
-            }
-            56% {
-                color: rgb(98, 98, 255);
-            }
-            70% {
-                color: blue;
-            }
-            84% {
-                color: purple;
-            }
-            100% {
-                color: red;
-            }
-        }
-    </style>
-</head>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    </head>
     <body>
-        <h1>MATI ES UN PUTO</h1>
+        <nav id="nav">
+            <div id="nav-top">
+                <h1 id="nav-top-logo" class="nav-box">ATI NEWS</h1>
+                <ul id="nav-top-elements" class="nav-box">
+                    <a class="nav-top-element" href="">Busqueda 🔍</a>
+                    <a class="nav-top-element" href="">Ingresar</a>
+                </ul>
+            </div>
+            <div id="nav-bottom">
+                <ul id="nav-bottom-elements">
+                    <a class="nav-bottom-element" href="">Explorar <span>∨</span></a>
+                    <a class="nav-bottom-element" href="">Diario <span>∨</span></a>
+                    <a id="nav-bottom-element-sub" class="nav-bottom-element" href="">Subscribirse</a>
+                </ul>
+                <ul id="nav-bottom-elements-right">
+                    <a class="nav-bottom-element" href="">Notificaciones 🔔</a>
+                </ul>
+            </div>
+        </nav>
+        <article id="article">
+            <div id="article-img-container">
+                <img id="article-img" src="https://i.imgur.com/G6TMFPN.png" alt="Foto de mati"></img>
+                <p id="article-img-description">Matias "Bombi" Martins junto a su amigo del alma Ian "God" Grecco en una reunion anticuarentena.</p>
+            </div>
+            <div id="article-container">
+                <h2 id="article-title"><span>Matias Martins: </span>La historia del peor jugador de League of Legends.</h2>
+                <div id="article-author-container">
+                    <div id="article-author">
+                        <img id="article-author-img" src="https://avatars1.githubusercontent.com/u/75143774?s=400&u=ad6235151b83056e476392e20db5614f3a591d0d&v=4">
+                        <h4 id="article-author-name">Florencia Fazzarino</h4>
+                        <p id="article-author-tag">OPINION</p>
+                    </div>
+                    <div id="article-author-links">
+                        <a class="article-author-link" href=""><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/43-twitter-512.png" class="article-author-link-img" id="twitter"></a>
+                        <a class="article-author-link" href=""><img src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg" class="article-author-link-img"></a>
+                        <a class="article-author-link" href=""><img src="https://prosmartmailing.com/wp-content/uploads/2016/09/Mail-Circle-Icon.png" class="article-author-link-img"></a>
+                    </div>
+                </div>
+                <div id="article-article">
+                    <p class="article-paragraph">El primer y probablemente peor año de la decada por fin esta terminando y en ATI NEWS nos preguntamos, quien sera el peor jugador de la historia del aclamado juego de Riot games, League of Legends.
+                        Una ardua busqueda en foros y servidores grandes de Discord nos llevo a unas curiosas capturas de video en rankeds de plata, asi encontramos a nuestro hombre.</p>
+                    <p class="article-paragraph">Matias "Bombi" Martins tambien conocido como BowieGamer177, conciderado por muchos, <span class="red-text">el peor jugador de la historia de League of legends</span>.
+                        Para empezar tiene entre su repertorio principal, alguno de los campeones mas odiados por la base de jugadores actualmente: Yasuo "El Imperdonable", Akali "La asesina" y Yone "El inolvidable", entre otros. 
+                    </p>
+                    <p class="article-paragraph">Es famoso en la Cola en Solitario, por ser <span class="red-text">incapaz de no alimentar al carrilero central adversario y siempre poner en una mala situacion a su equipo</span>, jugadores de plata encuestados han descrito el stylo de juego de Bombi como
+                        "tonto", "irresponsable", "malo malo malo malo".
+                    </p>
+                    <h4 id="video-description">Para reforzar esta idea, les hemos traido este clip, tipico de las partidas de Bombi.</h4>
+                    <iframe src="https://www.youtube.com/embed/qIcEvU5Qu6g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="article-paragraph">Siendo Bombi miembro de el pequeño servidor quilmeño de Discord "Anti Gordas Klan", nos acercamos a sus propios contactos frecuentes para hacerles notas y saber mas sobre el que para bien o para mal
+                        es nuestro personaje del año, he aqui citas del encuentro de ATI NEWS con algunos miembros de la AGK.
+                    </p>
+                    <p class="article-cite">"Malo malo malo malo"  -  Gabriel "Chele" Noel</p>
+                    <p class="article-cite">"Es un virgen."  -  Diego "Yuszo" Yusso, Fundador del AGK</p>
+                    <p class="article-cite">"Mi Yasuo es mejor"  -  Ian "God" Grecco, main Yasuo</p>
+                </div>
+            </div>
+        </article>
+        <footer id="footer"></footer>>
     </body>
 </html>
